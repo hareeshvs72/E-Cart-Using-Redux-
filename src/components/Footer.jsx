@@ -22,9 +22,10 @@ function Footer() {
            
             
             <ul className='leading-[28px] mt-2 text-base'>
-              <li>Landing Page</li>
-              <li>Home Page</li>
-              <li>Watch History Page</li>
+              
+              <li><Link to={'/'}>Home</Link></li>
+              <li><Link to={'/cart'}>Cart</Link></li>
+              <li><Link to={'/wishlist'}>Wishlist</Link></li>
             </ul>
           </div>
           <div className='text-xl ms-10 '>
