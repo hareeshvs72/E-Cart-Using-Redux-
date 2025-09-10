@@ -42,9 +42,9 @@ function Footer() {
            
                <span>Contact Us</span>
            
-            <form action="">
+            <form className='flex'>
               <input type="text" className='border bg-white text-black text-base py-2 px-17 rounded mt-2' placeholder='Enter Your EmailHere'/>
-              <i class="fa-solid fa-arrow-right"></i>
+              <button  className=''><i className="fa-solid fa-arrow-right" ></i></button>
             </form>
             <ul className='leading-[28px] mt-2 text-base flex justify-around'>
              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -57,7 +57,7 @@ function Footer() {
           </div>
 
         </div>
-        <p className='text-white text-sm font-bold text-center'>Copyright © July 2024 Batch, Daily Cart. Built with React Redux.</p>
+        <p className='text-white text-sm font-bold text-center'>Copyright ©Hareesh VS, E Cart. Built with React Redux.</p>
       </div>
     </>
 
