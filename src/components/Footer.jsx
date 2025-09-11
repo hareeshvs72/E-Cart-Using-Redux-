@@ -48,12 +48,12 @@ function Footer() {
               <button  className=''><i className="fa-solid fa-arrow-right" ></i></button>
             </form>
             <ul className='leading-[28px] mt-2 text-base flex justify-around'>
-             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-             <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-             <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-             <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+             <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
+             <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+             <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+             <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+             <li><a href="#"><i className="fa-brands fa-github"></i></a></li>
+             <li><a href="#"><i className="fa-solid fa-phone"></i></a></li>
             </ul>
           </div>
 

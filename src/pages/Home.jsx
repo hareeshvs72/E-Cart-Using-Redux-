@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchAllProducts } from '../redux/slice/productSlice'
+
 
 function Home() {
+  const dispatch = useDispatch()
+  const {loading,error,allProducts} =  useSelector(state => state.productsReducer)
+  console.log(loading,error,allProducts);
+  
+  useEffect(()=>{
+    dispatch(fetchAllProducts())
+  },[])
   return (
-
+      
     <>
      <Header />
      <div className='pt-17 pb-5 mx-5 '>
