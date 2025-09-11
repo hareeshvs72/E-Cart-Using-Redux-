@@ -19,18 +19,30 @@ function Home() {
      <Header />
      <div className='pt-17 pb-5 mx-5 '>
       <div className="grid grid-cols-4 gap-4">
+       
+        { 
+        loading? 
 
-         <div className="rounded p-2 shadow">
+         <p>loading</p>
+        :
+         allProducts?.length>0?
+         allProducts?.map((product)=>(
+           <div key={product.id} className="rounded p-2 shadow">
           {/* image */}
-          <img  height={'200px'} src='https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp'/>
+          <img  height={'200px'} src={product.thumbnail}/>
             
             <div className='text-center'>
             {/* title */}
-            <h3 className='font-bold text-xl'>Title</h3>
+            <h3 className='font-bold text-xl'>{product.title}</h3>
              {/* link */}
-             <Link to={`/id/view`} className='bg-violet-800 text-white p-1 rounded inline-block mt-3' > View More... </Link>
+             <Link to={`/${product.id}/view`} className='bg-violet-800 text-white p-1 rounded inline-block mt-3' > View More... </Link>
             </div>
-           </div>
+           </div> 
+         ))
+         : 
+         <p>Products Are Not Avilable</p>
+         
+          }
       </div>
     
      </div>
